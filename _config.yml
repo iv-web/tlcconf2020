@@ -5,7 +5,7 @@ author: Feflow.js
 language: zh-cn
 timezone: UTC
 
-url: https://2019.tlc.ivweb.io/
+url: https://2020.tlc.ivweb.io/
 root: /
 permalink: news/:year/:month/:day/:title/
 archive_dir: news
