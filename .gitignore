@@ -3,6 +3,9 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+db.json
+node_modules/
+public/
 
 # Other files and folders
 .settings/
