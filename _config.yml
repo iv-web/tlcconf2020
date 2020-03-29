@@ -1,0 +1,39 @@
+title: 腾讯Live开发者大会
+subtitle: "腾讯TLC大会是由腾讯直播&NOW直播IVWEB团队精心打造，致力于提升和促进全行业音视频、直播、图像处理、大前端、信息流等领域的交流和技术创新"
+description: "腾讯TLC大会是由腾讯直播&NOW直播IVWEB团队精心打造，致力于提升和促进全行业音视频、直播、图像处理、大前端、信息流等领域的交流和技术创新"
+author: Feflow.js
+language: zh-cn
+timezone: UTC
+
+url: https://2020.tlc.ivweb.io/
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+per_page: 0
+
+theme: navy
+deploy:
+  type: git
+  repo: git@github.com:iv-web/tlcconf2020.git
+
+highlight:
+  enable: true
+  line_number: false
+
+disqus_shortname: feflow
+google_analytics: UA-48498357-3
+fb_admins: 100000247608790
+algolia:
+  en:
+    api_key: c3d5d4c995b5e0c2ffb5623900279a66
+    index_name: hexo
+  zh-tw:
+    api_key: c83d2ec3440f40aec6d0e695ecec7ef3
+    index_name: hexo_zh-tw
+  zh-cn:
+    api_key: cdea7d4e47d84f6145b77e7f68689f35
+    index_name: hexo_zh-cn
+github: feflow/feflow

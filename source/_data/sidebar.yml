@@ -1,0 +1,11 @@
+docs:
+  getting_started:
+    overview: index.html
+    commands: commands.html
+  basic_usage:
+    writing: writing.html
+    tag_plugins: tag-plugins.html
+  customization:
+    permalinks: permalinks.html
+    themes: themes.html
+    eslint: eslint.html
