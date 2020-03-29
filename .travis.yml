@@ -15,5 +15,9 @@ script:
   - hexo generate
   
 deploy:
-  type: git
-  branch: gh-pages
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
