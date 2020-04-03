@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="inner">
       <div id="banner-bio">2019年8月17日·深圳科兴科学园国际会议中心</div>
-      <div id="banner-buttons">
+      <!--<div id="banner-buttons">
         <a href="https://www.bagevent.com/event/2596495#website_moduleId_258989" class="buy-ticket" target="_blank">立即购票</a>
       </div>
       <div id="live">
@@ -10,7 +10,7 @@
       </div>
       <div id="resources">
         <a href="https://ivweb.io/article.html?_id=100422" target="_blank">精彩回顾</a><a href="https://github.com/iv-web/ppts" target="_blank">讲师PPT</a><a href="https://ke.qq.com/course/436773" target="_blank">视频回放</a>
-      </div>
+      </div>-->
     </div>
   </div>
 </header>
@@ -20,7 +20,7 @@
       <div id="intro-user-wrap">
         <div class="publisher-title"></div>
         <ul id="publisher-items">
-
+          <div></div>
         </ul>
       </div>
     </div>
@@ -32,7 +32,10 @@
       <div id="intro-user-wrap">
         <div class="intro-user-title"></div>
         <ul id="speaker-items">
-
+          <div>
+            <p>谢伟 (Rokey)</p>
+            <p>联合创始人</p>
+          </div>
         </ul>
         <div class="view-all"><a href="/speakers/">查看全部</a></div>
       </div>
@@ -83,7 +86,7 @@
     <div class="inner">
       <div id="partner-wrap">
         <div class="partner-title"></div>
-        <div class="host-title"><img src="https://qpic.url.cn/feeds_pic/Q3auHgzwzM5bHwSic5gQcJJqeOm8xHsD1w8ia4AeTvTMdnzfyt5Xnexw/" /></div>
+        <div class="host-title">合作媒体</div>
         <ul class="sponsor-items">
             <li class="partner-item">
                 <a href="https://now.qq.com/" target="_blank">
@@ -101,7 +104,7 @@
                 </a>
             </li>
         </ul>
-        <div class="host-title"><img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLCYrfUE4h16jckTtxrOot5lSG5v3zxCW4c9xoShE7kqMg/"></div>
+        <div class="host-title">主办方</div>
         <ul id="sponsor-items" class="sponsor-items">
 
         </ul>

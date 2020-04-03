@@ -53,10 +53,10 @@
     padding: 0px 58px
     text-decoration: none
     transition: all 0.3s ease-out
-    border-radius: 50px
+    border-radius: 28px
   .buy-ticket
     text-align: center
-    background: linear-gradient(90deg, rgb(51, 121, 255), rgb(133, 44, 255))
+    background: linear-gradient(90deg, rgb(39, 32, 234), rgb(136, 0, 237, 1))
     width: 160px
     height: 50px
     font-size: 14px
@@ -136,19 +136,20 @@
 
 #intro-feature-list
   display: flex
-  flex-flow: column
+  flex-direction: row
+  justify-content: space-between
   display: -webkit-box
   -webkit-box-pack: justify
   -webkit-box-align: center
   padding-top: 10px
+  padding-bottom: 117px
   @media mq-normal
-    flex-flow: row wrap
     padding-top: 20px
 
 .intro-feature-wrap
   padding-top: 20px;
   font-size: 18px;
-  width: 100%;
+  // width: 100%;
   padding: 0px 40px 20px 40px
   @media mq-normal
     -webkit-box-flex: 1
@@ -184,9 +185,10 @@
     font-size: 24px
 
 .intro-feature-desc
-  text-align: left
-  font-size: 12px
-  line-height: 14px
+  text-align: center
+  font-size: 15px
+  width:302px
+
   @media mq-normal
     line-height: 24px
     font-size: 14px
@@ -194,7 +196,8 @@
   color: rgb(53, 119, 255)
   margin: 40px
   line-height: 20px
-  font-size: 14px
+  font-size: 18px
+  text-align: center
   @media mq-normal
     font-size: 24px
     line-height: 40px
@@ -283,28 +286,29 @@
 
 .subject-branch
   margin: 0 auto
-  width: 358px
-  height: 140px
+  width: 600px
+  height: 240px
   background-color: rgb(255, 255, 255)
-  margin-bottom: 14px
   @media mq-normal
     float: left
-    margin-right: 16px
     height: 264px
     width: 590px
   .subject-branch-title
-    color: rgb(53, 119, 255)
-    font-size: 14px
+    color: #4740FF
+    font-size: 22px
     font-weight: bold
-    padding-top: 23px
-    padding-bottom: 14px
-    border-bottom: 1px dashed rgb(221, 221, 221)
-    margin: 0px 16px 10px
+    padding-top: 30px
+    text-align: left 
+    // margin: 0px 16px 10px
     @media mq-normal
       font-size: 24px
       padding-top: 46px
-      padding-bottom: 28px
       margin: 0px 32px 20px
+  .subject-branch-seperate
+    width: 24px
+    height: 3px
+    background-color: #4740FF
+    position: absolute
   .subject-branch-content
     text-align: left
     line-height: 16px
@@ -359,7 +363,7 @@
         width: 160px
         height: 160px
     .name
-      color: rgb(51, 121, 255)
+      color: #4740FF
       font-size: 14px
       font-weight: bold
       margin: 14px 0px
@@ -367,27 +371,27 @@
         font-size: 22px
       a
         text-decoration: none
-        color: #3379ff
+        color: #4740FF
     .desc
       font-size: 14px
       line-height: 1.3em
-      color: #3e4249
+      color: #666666
       @media mq-normal
         font-size: 16px
 
 .view-all
-  color: rgb(57, 115, 255)
-  font-size: 14px
+  color: #4740FF
+  font-size: 18px
   text-align: center
   border-width: 1px
   border-style: solid
-  border-color: rgb(57, 122, 255)
+  border-color: #4740FF
   border-image: initial
   margin: 40px auto 0px
-  border-radius: 4px
-  width: 120px
-  height: 45px
-  line-height: 45px
+  border-radius: 28px
+  width: 168px
+  height: 56px
+  line-height: 56px
   @media mq-normal
     width: 160px
     height: 60px
@@ -431,12 +435,21 @@
       width: 543px
       height: 67px
   .host-title
-    margin: 20px 0
-    img
-      width: 100%
+    margin:0 auto
+    margin-bottom: 40px
+    width:200px
+    height:56px
+    background-color: #4740FF
+    line-height: 56px
+    font-size: 23px
+    text-align: center
+    color: #ffffff 
+    border-radius: 28px
+    
   .sponsor-items
     display: flex
     flex-wrap: wrap
+    margin-bottom:40px
   .partner-item
     display: inline-block
     img
@@ -616,29 +629,37 @@
         overflow-y: hidden
         -webkit-overflow-scrolling: touch
         width: 100%
+        // border-radius: 48px 0 48px 0
         @media mq-normal
           overflow: hidden
         .tab-items
+          display: inline-block
           width: 910px
           @media mq-normal
             width: 1190px
           li
             cursor: pointer
-            float: left
-            font-size: 14px
+            float left
+            vertical-align: bottom
+            font-size: 20px
             color: #fff
-            height: 80px
+            height: 56px
             text-align: center
-            line-height: 80px
-            background: rgba(255,255,255, 0.2)
-            margin-right: 1px
-            width: 150px
+            line-height: 56px
+            background: rgba(29, 27, 80, 1)
+            width: 200px
             @media mq-normal
               width: 196px
               font-size: 20px
+          li:hover
+            background-color: rgba(86, 85, 134, 1)
+            
+
 
 #schedule-wrap
   display: none
+  overflow: scroll
+  height: 896px
   @media mq-normal
     display: block
 
@@ -719,13 +740,13 @@
           justify-content: center
           .name
             font-size: 16px
-            color: #3577ff
+            // color: rgba(71, 64, 255, 1)
             line-height: 24px
             width: 150px
             margin-bottom: 12px
             a
               font-size: 16px
-              color: #3577ff
+              // color: rgba(71, 64, 255, 1)
               text-decoration: none
           .title
             color: #999
@@ -771,15 +792,22 @@
       margin: 40px 0
       border-collapse: collapse
       font-size: 16px
+      tr .gray
+        background-color: #FFFFFF
       td
-        border: 1px #e1e1e1 solid
         height: 160px
         width: 250px
         text-align: center
+        line-height: 24px
+      .dark-blue
+        background-color: #020436
       .bold
         font-weight: bold
-      .blue
-        color: #3379ff
+        color: #ffffff   
+        height: 98px
+      .black
+        color: #000000
+
         a
           text-decoration: none
           color: #3379ff

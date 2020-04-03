@@ -6,7 +6,7 @@
       </h1>
       <nav id="main-nav">
         {{ header_menu('main-nav') }}
-        <a href="http://2019-en.tlc.ivweb.io" class="main-nav-link">English</a>
+        <!-- <a href="http://2019-en.tlc.ivweb.io" class="main-nav-link">English</a> -->
       </nav>
       <div id="buy-ticket">
         <a href="https://www.bagevent.com/event/2596495#website_moduleId_258989" class="buy-ticket-link" target="_blank">立即购票</a>

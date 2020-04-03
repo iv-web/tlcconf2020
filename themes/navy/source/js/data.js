@@ -54,7 +54,7 @@
             }
         }
 
-        var subjectTpl = '<div class="subject-title"></div> <div class="subject-main"> <p class="subject-main-title">{{ subjectMainInfo.title }}</p> <p class="subject-main-content">{{ subjectMainInfo.description }}</p> </div> <ul> {% for item in branchItems %}<li class="subject-branch"> <p class="subject-branch-title">{{ item.title }}</p> <p class="subject-branch-content">{{ item.description }}</p> </li>{% endfor %}</ul>'
+        var subjectTpl = '<div class="subject-title"></div> <div class="subject-main"> <p class="subject-main-title">{{ subjectMainInfo.title }}</p> <p class="subject-main-content">{{ subjectMainInfo.description }}</p> </div> <ul> {% for item in branchItems %}<li class="subject-branch"> <p class="subject-branch-title">{{ item.title }}</p>  <p class="subject-branch-content">{{ item.description }}</p> </li>{% endfor %}</ul>'
         var subjectOutput = swig.render(subjectTpl, {
             filename: '/subjectTpl',
             locals: {
@@ -254,7 +254,7 @@
             }
         }
 
-        var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue"><p>{{headerItem.title}}</p><p class="location">({{headerItem.location}})</p></td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
+        var contentTpl = '<tr class="dark-blue"> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue"><p>{{headerItem.title}}</p><p class="location">({{headerItem.location}})</p></td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
 
         var h5ContentTpl = '{% for key, val in tableData %}<div class="schedule-subject-branch "> <p class="schedule-subject-main-title">{{val.title}}</p> <p class="schedule-subject-main-content">{{val.location}}</p> </div>{% for item in val.schedules %} {% if speakerMap[item.number] && speakerMap[item.number].topic %} <div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"> <a href="/detail/?number={{item.number}}" target="_blank"><img src="{{speakerMap[item.number].avatar}}" /> </a></div> <div class="author-info"> <p class="name"><a href="/detail/?number={{item.number}}" target="_blank">{{ speakerMap[item.number].topic}}</a></p> <p class="title">{{speakerMap[item.number].name}}</p> </div></div><div class="time">{{speakerMap[item.number].time}}</div> </div></div>{% endif %} {% if item.plan %}<div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"></div> <div class="author-info"> <p class="name">{{item.plan}}</p> </div></div><div class="time">{{item.timeline}}</div> </div></div>{% endif %} {% endfor %}{% endfor %}';
 
