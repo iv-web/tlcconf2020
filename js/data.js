@@ -54,7 +54,7 @@
             }
         }
 
-        var subjectTpl = '<div class="subject-title"></div> <div class="subject-main"> <p class="subject-main-title">{{ subjectMainInfo.title }}</p> <p class="subject-main-content">{{ subjectMainInfo.description }}</p> </div> <ul> {% for item in branchItems %}<li class="subject-branch"> <p class="subject-branch-title">{{ item.title }}</p> <p class="subject-branch-content">{{ item.description }}</p> </li>{% endfor %}</ul>'
+        var subjectTpl = '<div class="subject-title"></div> <div class="subject-main"> <p class="subject-main-title">{{ subjectMainInfo.title }}</p> <div class="subject-main-seperate"></div> <p class="subject-main-content">{{ subjectMainInfo.description }}</p> </div> <ul> {% for item in branchItems %}<li class="subject-branch"> <p class="subject-branch-title">{{ item.title }}</p> <div class="subject-branch-seperate"></div> <p class="subject-branch-content">{{ item.description }}</p> </li>{% endfor %}</ul>'
         var subjectOutput = swig.render(subjectTpl, {
             filename: '/subjectTpl',
             locals: {
@@ -199,7 +199,7 @@
     };
 
     var renderSubjectPage = function(data) {
-        var subjectTpl = '{% for item in subjectItems %}<div id="speaker-subject-wrap"> {% if item.isMain %}<div class="speaker-subject-title"></div> {% endif %}<div class="{% if item.isMain %} speaker-subject-main {% else %} speaker-subject-branch {% endif %}"> <p class="speaker-subject-main-title">{{item.title}}</p> <p class="speaker-subject-main-content">{{item.description}}</p> </div> <ul> {% for speakerItem in item.speakers %}<li class="speaker-subject-items"> <div class="speaker-avatar"><a href="/detail/?number={{ speakerItem.number }}" target="_blank"><img src="{{speakerItem.avatar}}" /></a></div> <div class="speaker-info"><p class="speaker-topic"><a href="/detail/?number={{ speakerItem.number }}" target="_blank">{{speakerItem.topic}}</a></p> <p class="speaker-name">{{speakerItem.name}}</p> </div> </li>{% endfor %}</ul> </div> {% endfor %}';
+        var subjectTpl = '{% for item in subjectItems %}<div id="speaker-subject-wrap"> {% if item.isMain %} {% endif %}<div class="{% if item.isMain %} speaker-subject-main {% else %} speaker-subject-branch {% endif %}"> <p class="speaker-subject-main-title">{{item.title}}</p> <div class="speaker-subject-main-seperate"></div> <p class="speaker-subject-main-content">{{item.description}}</p> </div> <ul> {% for speakerItem in item.speakers %}<li class="speaker-subject-items"> <div class="speaker-avatar"><a href="/detail/?number={{ speakerItem.number }}" target="_blank"><img src="{{speakerItem.avatar}}" /></a></div> <div class="speaker-info"><p class="speaker-topic"><a href="/detail/?number={{ speakerItem.number }}" target="_blank">{{speakerItem.topic}}</a></p> <p class="speaker-name">{{speakerItem.name}}</p> </div> </li>{% endfor %}</ul> </div> {% endfor %}';
 
         var subjectOutput = swig.render(subjectTpl, {
             filename: '/subjectTpl',
@@ -254,7 +254,7 @@
             }
         }
 
-        var contentTpl = '<tr> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue"><p>{{headerItem.title}}</p><p class="location">({{headerItem.location}})</p></td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
+        var contentTpl = '<tr class="dark-blue"> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue"><p>{{headerItem.title}}</p><p class="location">({{headerItem.location}})</p></td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
 
         var h5ContentTpl = '{% for key, val in tableData %}<div class="schedule-subject-branch "> <p class="schedule-subject-main-title">{{val.title}}</p> <p class="schedule-subject-main-content">{{val.location}}</p> </div>{% for item in val.schedules %} {% if speakerMap[item.number] && speakerMap[item.number].topic %} <div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"> <a href="/detail/?number={{item.number}}" target="_blank"><img src="{{speakerMap[item.number].avatar}}" /> </a></div> <div class="author-info"> <p class="name"><a href="/detail/?number={{item.number}}" target="_blank">{{ speakerMap[item.number].topic}}</a></p> <p class="title">{{speakerMap[item.number].name}}</p> </div></div><div class="time">{{speakerMap[item.number].time}}</div> </div></div>{% endif %} {% if item.plan %}<div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"></div> <div class="author-info"> <p class="name">{{item.plan}}</p> </div></div><div class="time">{{item.timeline}}</div> </div></div>{% endif %} {% endfor %}{% endfor %}';
 
@@ -343,7 +343,7 @@
                 }
             }
 
-            var contentTpl = '<div class="base-info"> <div> <div class="title">演讲：{{speakerItem.topic}}</div> <div class="author">{{speakerItem.name}} | {{speakerItem.brief}}</div> </div> <div class="logo-url"> <img src="{{speakerItem.avatar}}" /> </div> </div> <div class="topic-detail"> <p>{{speakerItem.intro | raw}}</p> </div> <div class="conf-info"> <div class="location"> <i></i> <div> <p class="key">地点</p> <p class="value">{{speakerItem.location}}</p> </div> </div> <div class="time"> <i></i> <div> <p class="key">时间</p> <p class="value">{{speakerItem.time}}</p> </div> </div> <div class="branch"> <i></i> <div> <p class="key">所属会场</p> <p class="value">{{speakerItem.branchName}}</p> </div> </div> </div>'
+            var contentTpl = '<div class="base-info"> <div> <div class="title">演讲：<br/>{{speakerItem.topic}}</div> <div class="author">{{speakerItem.name}} | {{speakerItem.brief}}</div> </div> <div class="logo-url"> <img src="{{speakerItem.avatar}}" /> </div> </div> <div class="topic-detail"> <p>{{speakerItem.intro | raw}}</p> </div> <div class="conf-info"> <div class="location"> <i></i> <div> <p class="key">地点</p> <p class="value">{{speakerItem.location}}</p> </div> </div> <div class="time"> <i></i> <div> <p class="key">时间</p> <p class="value">{{speakerItem.time}}</p> </div> </div> <div class="branch"> <i></i> <div> <p class="key">所属会场</p> <p class="value">{{speakerItem.branchName}}</p> </div> </div> </div>'
             var contentOutput = swig.render(contentTpl, {
                 locals: {
                     speakerItem: speakerItem
@@ -407,7 +407,7 @@
 
 
 
-            var contentTpl = '<div class="base-info"> <div> <div class="title">出品人：{{publisherItem.name}}</div> <div class="author">{{publisherItem.brief}}</div> </div> <div class="logo-url"> <img src="{{publisherItem.avatar}}" /> </div> </div> <div class="topic-detail"> <p>{{publisherItem.detail}}</p> </div><div class="speaker-list">{% for item in publisherItem.speakerList %}<div class="speaker-item"><div class="speaker-header"><div class="speaker-title"><a href="/detail/?number={{item.number}}" target="_blank">专题：{{item.topic}}</a></div>  <div class="location"><i></i> <div> <p class="key">地点</p> <p class="value">{{item.location}}</p> </div></div> </div><div class="speaker-detail">{{item.intro}}</div></div>{% endfor %}</div></div>'
+            var contentTpl = '<div class="base-info"> <div> <div class="title">出品人：{{publisherItem.name}}</div> <div class="author">{{publisherItem.brief}}</div> </div> <div class="logo-url"> <img src="{{publisherItem.avatar}}" /> </div> </div> <div class="topic-detail"> <p>{{publisherItem.detail}}</p> </div><div class="speaker-list">{% for item in publisherItem.speakerList %}<div class="speaker-item"><div class="speaker-header"><div class="speaker-title"><a href="/detail/?number={{item.number}}" target="_blank">专题：{{item.topic}}</a></div>  <div class="location"><div> <p class="key">地点</p> <p class="value">{{item.location}}</p> </div> <i></i> </div> </div><div class="speaker-detail">{{item.intro}}</div></div>{% endfor %}</div></div>'
             var contentOutput = swig.render(contentTpl, {
                 locals: {
                     publisherItem: publisherItem
