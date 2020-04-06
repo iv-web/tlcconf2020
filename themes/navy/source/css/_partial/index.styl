@@ -1,11 +1,12 @@
 #banner
   color: rgba(255, 255, 255, 0.8)
   text-align: center
-  background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLDWuNn1yNJNIhAfBHMNCans0fVxYVZo1ErFQehxvDb5Kw/) center center
+  background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM583heL3F2mYrznXK9IYVn2EUmDYPSk5TGl50xSYL3lUg/') center center
   background-size: contain
   height: 606.5px
   @media mq-normal
     height: 924px
+    background:url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM7icnyxGgFcQxwMLWSibYKb4r4dxbyRAXmEQTo2IhIVDTqA/') center center
     background-image: none
     background-size: cover
     background-position: center center
@@ -125,25 +126,28 @@
     display: block
 
 #intro-feature-title
-  background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLAt1ecjaF8Nr9iadArhicd4nNUVo7k3PBwSESKneSL0wuvw/) no-repeat
-  margin: 60px auto 16px
+  background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM70Qrg6ouTg2KMay2aRAv1sWI74BJiaibmWA6bsEc2N8QAg/) no-repeat
+  margin: 40px auto
   width: 271.5px
   height: 33.5px
   background-size: contain
   @media mq-normal
     width: 543px
     height: 67px
+    margin: 60px auto
+    text-align: center
 
 #intro-feature-list
   display: flex
-  flex-direction: row
-  justify-content: space-between
+  flex-direction: column
   display: -webkit-box
   -webkit-box-pack: justify
   -webkit-box-align: center
   padding-top: 10px
-  padding-bottom: 117px
+  padding-bottom: 40px
   @media mq-normal
+    flex-direction: row
+    justify-content: space-between
     padding-top: 20px
 
 .intro-feature-wrap
@@ -178,7 +182,7 @@
 .intro-feature-title
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
   font-size: 16px
-  color: rgb(51, 51, 51)
+  color: #4740FF
   font-weight: bold
   margin-bottom: 16px
   @media mq-normal
@@ -188,13 +192,13 @@
   text-align: center
   font-size: 15px
   width:302px
-
+  color: #ffffff
+  line-height: 24px
   @media mq-normal
-    line-height: 24px
     font-size: 14px
 #intro-feature-background
-  color: rgb(53, 119, 255)
-  margin: 40px
+  color: #ffffff
+  margin: 0 20px 40px 20px
   line-height: 20px
   font-size: 18px
   text-align: center
@@ -228,11 +232,10 @@
 
 #subject-wrap
   text-align: center
-  padding-top: 37px
-  padding-bottom: 120px
+
   margin: 0px auto
   @media mq-normal
-    padding-top: 74px
+    // padding-top: 74px
     padding-bottom: 70px
   ul:after
     clear: both
@@ -240,22 +243,27 @@
     display: table
 
 .subject-title
-  background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLDah4qaGjOfkteepVOBfqPpc2KQ4RqkQ5mbIicicibZXxrtA/) no-repeat
-  margin: 0px auto 16px
+  background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLAScjxlLnIicqeHoEiaKyJANTqiaV5CbMvRP63TQBqicxPS4Q/) no-repeat
+  margin: 0 auto
   background-size: contain
+  margin-top: 36px
   width: 271.5px
   height: 33.5px
   @media mq-normal
     width: 543px
     height: 67px
+    margin: 0px auto 
+    margin-top: 70px
+    margin-bottom: 36px
 
 .subject-main
   margin: 0 auto
   width: 358px
-  height: 140px
+  height: 180px
   background-size: cover
   margin-bottom: 14px
-  background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM7I1jBYfDiaKXmlb4CrubsCjJagqiaLDLR1qmHwPetwFyww/) no-repeat
+  border-radius: 10px
+  background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLAjWkeKylrwut5CESiaQ1J3okHl0DwdKo81qxBDTIj9iaeQ/) no-repeat
   @media mq-normal
     width: 1196px
     height: 280px
@@ -263,7 +271,6 @@
     color: rgb(255, 255, 255)
     font-weight: bold
     width: 312px
-    border-bottom: 1px dashed rgb(255, 255, 255)
     font-size: 16px
     padding: 30px 0 15px
     margin: 0 auto 15px
@@ -271,7 +278,17 @@
       font-size: 32px
       padding: 60px 0px 30px
       margin: 0px auto 30px
-
+  .subject-main-seperate
+      position: relative
+      top:-10px
+      background-color: #ffffff
+      width: 18px
+      height: 2px
+      margin:0 auto
+      @media mq-normal
+        top:-46px
+        width: 24px
+        height: 2px
   .subject-main-content
     font-size: 12px
     color: rgb(255, 255, 255)
@@ -286,8 +303,8 @@
 
 .subject-branch
   margin: 0 auto
-  width: 600px
-  height: 240px
+  width: 351px
+  height: 150px
   background-color: rgb(255, 255, 255)
   @media mq-normal
     float: left
@@ -299,21 +316,28 @@
     font-weight: bold
     padding-top: 30px
     text-align: left 
-    // margin: 0px 16px 10px
+    margin: 0px 14px 18px
     @media mq-normal
       font-size: 24px
       padding-top: 46px
-      margin: 0px 32px 20px
+      margin: 0px 30px 42px
+      
   .subject-branch-seperate
     width: 24px
-    height: 3px
+    height: 2px
     background-color: #4740FF
-    position: absolute
+    position: relative
+    left:16px
+    top:-14px
+    @media mq-normal
+      left: 32px
+      top:-32px
   .subject-branch-content
     text-align: left
     line-height: 16px
     font-size: 12px
     margin: 0px 16px
+    word-wrap: break-word
     @media mq-normal
       line-height: 24px
       font-size: 16px
@@ -325,22 +349,24 @@
 
 #intro-user-wrap
   text-align: center
-  padding-top: 74px
-  padding-bottom: 70px
+  padding-top: 37px
+  padding-bottom: 35px
   margin: 0px auto
   .publisher-title
     width: 271.5px
     height: 33.5px
-    background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM6iaag9ZJoJUf7dZpx2S3loLespPwVT5vQdBEfxWEOrVHw/) no-repeat
+    background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM4PZ3N0oukiaicP91AzUVktgCIBygkNLdGibSksa9fEB2d6g/) no-repeat
     background-size: contain
     margin: 0px auto 16px
     @media mq-normal
+      padding-top: 74px
+      padding-bottom: 70px
       width: 543px
       height: 67px
   .intro-user-title
     width: 271.5px
     height: 33.5px
-    background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM5aDoH6vbhicFbrxibcaWzAmsYAlqvJ32g4KqxiaBtibwRZYg/) no-repeat
+    background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM7HkmMibr285zfHe5Fp5UKypZxhxPC0VHfoeU7PT59Vwkg/) no-repeat
     background-size: contain
     margin: 0px auto 16px
     @media mq-normal
@@ -404,7 +430,7 @@
 #preview-wrap
   margin-top: 60px
   .preview-title
-    background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM4PlOCUvRdCL8Im2dhibTHJmjKbBuaVqr1LADd4RzrakBA/) no-repeat
+    background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM6AwW2TvfBm5e4RTMPfz7ewmjnPHhEjc2jJm3rHNSHqYA/) no-repeat
     background-size: contain
     margin: 0px auto 36px
     width: 271.5px
@@ -426,7 +452,7 @@
   padding-bottom: 100px
   margin: 0px auto
   .partner-title
-    background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM5tbceibLErxRBLriaw2LYcvRqPyFYRNMEhL8ia2xBib2nTUA/) no-repeat
+    background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLAPJVmrLdI2RwqKwicbBzgrQaSuM4zRpLicCibibl1iafnEJdQ/) no-repeat
     background-size: contain
     margin: 0px auto 36px
     width: 271.5px
@@ -437,14 +463,19 @@
   .host-title
     margin:0 auto
     margin-bottom: 40px
-    width:200px
-    height:56px
+    width:100px
+    height:28px
     background-color: #4740FF
-    line-height: 56px
-    font-size: 23px
+    line-height: 28px
+    font-size: 13px
     text-align: center
     color: #ffffff 
     border-radius: 28px
+    @media mq-normal
+      font-size: 26px
+      width: 200px
+      height: 56px
+      line-height: 56px
     
   .sponsor-items
     display: flex
@@ -469,22 +500,12 @@
 #speaker-subject-wrap
   margin: 0px auto
   @media mq-normal
-    padding-top: 74px
+    // padding-top: 74px
     padding-bottom: 20px
   ul:after
     clear: both
     content: ''
     display: table
-
-.speaker-subject-title
-  background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLDah4qaGjOfkteepVOBfqPpc2KQ4RqkQ5mbIicicibZXxrtA/) no-repeat
-  margin: 0px auto 16px
-  background-size: contain
-  width: 271.5px
-  height: 33.5px
-  @media mq-normal
-    width: 543px
-    height: 67px
 
 .speaker-subject-main
   margin: 0 auto
@@ -525,32 +546,41 @@
 .speaker-subject-branch
   margin: 0 auto
   width: 358px
-  height: 140px
+  height: 200px
   background-size: cover
   margin-bottom: 14px
-  background: #fff
+  background: #243DAA
   text-align: center
   @media mq-normal
-    width: 1196px
-    height: 280px
+    width: 1200px
+    height: 360px
   .speaker-subject-main-title
-    color: #535bff
-    font-weight: bold
+    color: #ffffff
     width: 312px
-    border-bottom: 1px dashed #000
     font-size: 16px
-    padding: 20px 0 15px
+    padding: 20px 0 10px 0
     margin: 0 auto 15px
     @media mq-normal
       font-size: 32px
-      padding: 60px 0px 30px
+      padding: 60px 0 20px 0
       margin: 0px auto 30px
       width: 370px
+  .speaker-subject-main-seperate
+      position: relative
+      top:-10px
+      background-color: #ffffff
+      width: 18px
+      height: 2px
+      margin:0 auto
+      @media mq-normal
+        top:-30px
+        width: 24px
+        height: 2px
   .speaker-subject-main-content
     font-size: 12px
-    color: #000
+    color: #ffffff
     width: 300px
-    text-align: left
+    text-align: center
     line-height: 16px
     margin: 0px auto
     @media mq-normal
@@ -560,17 +590,17 @@
 
 .speaker-subject-items
   margin: 0 auto
-  width: 358px
-  height: 120px
+  width: 392px
+  height: 168px
   background-color: rgb(255, 255, 255)
-  margin-bottom: 14px
+  margin-bottom: 16px
   display: flex
   align-items: center
   @media mq-normal
     float: left
-    margin-right: 16px
-    height: 160px
-    width: 388px
+    margin-right: 12px
+    height: 168px
+    width: 392px
     padding-left: 20px
     &:nth-child(3n)
       margin-right: 0
@@ -591,14 +621,14 @@
       width: 250px
     .speaker-topic
       font-size: 20px
-      color: #3577ff
+      color: #4740FF
       line-height: 24px
       margin-bottom: 12px
       a
         text-decoration: none
-        color: #3577ff
+        color: #4740FF
     .speaker-name
-      color: #999
+      color: #666666
       font-size: 18px
 
 .speaker-subject-items:last-child
@@ -607,21 +637,17 @@
 
 .speaker-wrap
   .tab-header
-    background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM7Nic6SB9f5fIibbdLXuhzhQsR12zibUqic0icR4fc82ffg1KA/') center center
-    height: 400px
+    background: url('https://qpic.url.cn/feeds_pic/ajNVdqHZLLC2RXpQ0SBgYDmpaMF6reBPvARN3Tj4JYAIRoK1vgwCLg/') center center
+    height: 150px
     background-size: cover
-    .inner
+    @media mq-normal
       height: 400px
+      background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM5RGYaEuPUvaHHIDUQWUc1dL7sebJsry63QcwKdQkicibcw/')
+    .inner
+      height: 150px
       position: relative
-      h1
-        text-align: center
-        font-size: 30px
-        color: #fff
-        margin-top: 100px
-        letter-spacing: 8px
-        @media mq-normal
-          font-size: 36px
-          margin-top: 142px
+      @media mq-normal
+        height: 400px
       .tab-scroller-wrap
         position: absolute
         bottom: 0
@@ -629,30 +655,32 @@
         overflow-y: hidden
         -webkit-overflow-scrolling: touch
         width: 100%
-        // border-radius: 48px 0 48px 0
         @media mq-normal
           overflow: hidden
+          border-radius: 48px 48px 0 0
         .tab-items
-          display: inline-block
           width: 910px
           @media mq-normal
             width: 1190px
           li
             cursor: pointer
-            float left
-            vertical-align: bottom
-            font-size: 20px
+            float:left
+            font-size: 12px
             color: #fff
-            height: 56px
+            height: 28px
             text-align: center
-            line-height: 56px
+            line-height: 28px
             background: rgba(29, 27, 80, 1)
-            width: 200px
+            width: 100px
             @media mq-normal
+              height: 56px
               width: 196px
               font-size: 20px
           li:hover
             background-color: rgba(86, 85, 134, 1)
+            height: 30px
+            @media mq-normal
+              height: 60px
             
 
 
@@ -767,7 +795,7 @@
       width: 24px
       height: 30px
   .tab-header
-    background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM5Au48fl0sn9fvVIaDvpRFftZU3YP6rD4P4hIibaicLqr8A/') center center
+    background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM6S2fniczcQsyHekXEgHc4P0cUl37nFSdOmbjyNoLcic0kA/') center center
     height: 260px
     background-size: cover
     .inner
@@ -822,7 +850,7 @@
 .apply-wrap
   overflow: hidden
   .header
-    background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM7Vlqt50QGMlZgZs0nLGv4jLwd7ribvbHv0g07RyXqB97g/') center center
+    background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM67WK5VRd7jXQcNW70Fb4BdQpV46iaI5Adhp5aowGktG9g/') center center
     height: 400px
     .wrapper
       .inner
@@ -832,16 +860,22 @@
         padding: 0 10px
         line-height: 22px
         .title
+          width: 682px
+          margin:0 auto
           margin-top: 200px
           margin-bottom: 30px
+          text-align: center
         @media mq-normal
-          font-size: 20px
+          font-size: 18px
           line-height: 30px
+        .desc
+            text-align: center
+            font-size: 18px
   .tab-content
     .review-pictures
       margin-top: 60px
       .requirements-title
-        color: #5c53ff
+        color: #4740FF
         font-size: 20px
         font-weight: bold
         text-align: center
@@ -851,12 +885,12 @@
       .carousel
         position: relative
         z-index: 2
-        height: 125px
+        height:300px
         margin-top: 20px
         transform-style: preserve-3d
         perspective: 800px
         @media mq-normal
-          height: 250px
+          height: 530px
         img
           position: absolute
           left:50%
@@ -866,13 +900,15 @@
           margin-left:-126px
           margin-top:-66.5px
           transition:transform .5s ease-in-out
-          box-shadow:8px 8px 20px rgba(0,0,0,.2)
+          box-shadow:8px 8px 20px rgba(43, 36, 227, 0.4)
           cursor:pointer
+          border: 10px solid #ffffff
+          border-radius: 10px
           @media mq-normal
-            width:504px
-            height:266px
-            margin-left:-252px
-            margin-top:-133px
+            width:860px
+            height:516px
+            margin-left:-430px
+            margin-top:-258px
       #bannerNav
         position:relative
         margin-top:20px
@@ -903,7 +939,7 @@
       padding: 0 10px
       margin-top: 60px
       .requirements-title
-        color: #5c53ff
+        color: #4740FF
         font-size: 20px
         font-weight: bold
         text-align: center
@@ -914,7 +950,7 @@
         margin-bottom: 40px
         .section-title
           margin: 10px 0
-          color: #5c53ff
+          color: #4740FF
           font-size: 16px
           font-weight: bold
           @media mq-normal
@@ -929,12 +965,12 @@
               font-size: 20px
       .apply-button
         padding: 0 33px
-        border-radius: 6px
+        border-radius: 28px
         text-align: center
         line-height: 59px
         text-decoration: none
-        color: #fff
-        background: linear-gradient(90deg, #3379ff, #852cff)
+        color: #4740FF
+        border: 1px solid #4740FF
         display: block
         margin: 0 auto 100px auto
         width: 160px
@@ -951,6 +987,7 @@
           align-items: center
           display: flex
           justify-content: center
+          border-radius: 28px
 
 .detail-wrap
   padding: 0 20px
@@ -965,14 +1002,16 @@
     margin-bottom: 90px
     .title
       font-size: 20px
-      color: #4766ff
+      color: #4740FF
       margin-bottom: 27px
+      font-weight: bold
       @media mq-normal
         font-size: 36px
         margin-bottom: 54px
     .author
       font-size: 16px
-      color: #3e4249
+      color: #333333
+      font-weight: bold
       @media mq-normal
         font-size: 24px
     .logo-url
@@ -1005,15 +1044,16 @@
       @media mq-normal
         font-size: 20px
     .value
-      color: #3379ff
+      color: #4740FF
       font-size: 16px
+      font-weight: bold
       @media mq-normal
         font-size: 24px
     .location
       display: flex
       flex: 1
       i
-        background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM67I8Wrdyc8x7GCgkPTKmeYBBoWM4clOALtK2mzibqU0Rg/) no-repeat
+        background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLC309Bj2QRKaicq6Hp4jibRueicIYy5AvgNmY18s0BbicPsyA/) no-repeat
         background-size: contain
         display: inline-block
         width: 22.5px
@@ -1021,11 +1061,13 @@
         margin-right: 10px
         @media mq-normal
           margin-right: 30px
+          width: 54px
+          height: 54px
     .time
       display: flex
       flex: 1
       i
-        background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM7YZ5cJcEBLwCWGC0dod3a5d6Pc0EuyzdSmQBaTmkvgcA/) no-repeat
+        background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLA9vAJMYJgdYuPstsUsdMZiaHtscibp3vO4usnhNTLDPlMw/) no-repeat
         background-size: contain
         display: inline-block
         width: 27px
@@ -1039,7 +1081,7 @@
       display: flex
       flex: 1
       i
-        background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM6yHGuowyUq7piafpUlAiawJqnfv10ibNE0uqJW2r6EhfzJA/) no-repeat
+        background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM4LKXt4cWyEFIdE4FrOgvf5iauicjD9nXjOUMTs02oSzY9g/) no-repeat
         background-size: contain
         display: inline-block
         width: 24.5px
@@ -1064,14 +1106,16 @@
     margin-bottom: 90px
     .title
       font-size: 20px
-      color: #4766ff
-      margin-bottom: 27px
+      color: #4740FF
+      margin-bottom: 24px
+      font-weight: bold
       @media mq-normal
         font-size: 36px
         margin-bottom: 54px
     .author
       font-size: 16px
       color: #3e4249
+      font-weight: bold
       @media mq-normal
         font-size: 24px
     .logo-url
@@ -1101,26 +1145,29 @@
         align-items: center
         .speaker-title
           font-size: 20px
-          color: #4766ff
+          color: #4740FF
+          font-weight: bold
           @media mq-normal
             font-size: 36px
           a
-            color: #4766ff
+            color: #4740FF
+            font-weight: bold
             text-decoration: none
         .location
           display: flex
           i
-            background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM67I8Wrdyc8x7GCgkPTKmeYBBoWM4clOALtK2mzibqU0Rg/) no-repeat
+            background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLC309Bj2QRKaicq6Hp4jibRueicIYy5AvgNmY18s0BbicPsyA/) no-repeat
             background-size: contain
             display: inline-block
             width: 22.5px
             height: 30.5px
-            margin-right: 10px
+            margin-left: 10px
             @media mq-normal
-              margin-right: 30px
-              width: 45px
-              height: 61px
+              margin-left: 30px
+              width: 72px
+              height: 72px
           .key
+            text-align: right 
             color: #333
             font-size: 14px
             margin-bottom: 6px
@@ -1128,7 +1175,8 @@
             @media mq-normal
               font-size: 20px
           .value
-            color: #3379ff
+            text-align: right 
+            color: #4740FF
             font-size: 16px
             @media mq-normal
               font-size: 24px

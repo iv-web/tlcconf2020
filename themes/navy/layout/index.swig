@@ -1,7 +1,7 @@
 <header id="banner">
   <div class="wrapper">
     <div class="inner">
-      <div id="banner-bio">2019年8月17日·深圳科兴科学园国际会议中心</div>
+      <div id="banner-bio"></div>
       <!--<div id="banner-buttons">
         <a href="https://www.bagevent.com/event/2596495#website_moduleId_258989" class="buy-ticket" target="_blank">立即购票</a>
       </div>
@@ -33,8 +33,7 @@
         <div class="intro-user-title"></div>
         <ul id="speaker-items">
           <div>
-            <p>谢伟 (Rokey)</p>
-            <p>联合创始人</p>
+            
           </div>
         </ul>
         <div class="view-all"><a href="/speakers/">查看全部</a></div>
@@ -42,7 +41,7 @@
     </div>
   </div>
 </div>
-<div id="content-wrap">
+<div id="blue-content-wrap">
   <div class="wrapper">
     <div class="inner">
       {{ page.content }}
