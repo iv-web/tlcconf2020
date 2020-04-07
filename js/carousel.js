@@ -38,9 +38,9 @@
   };
 
   var outerWidth = parseInt($(window).width());
-  var middleWidth = 1920;
-  var _height = outerWidth >= middleWidth ? 516 : 252;
-  var _slideHeight = outerWidth >= middleWidth ? 400 : 133;
+  var middleWidth = 1440;
+  var _height = outerWidth >= middleWidth ? 516 : 200;
+  var _slideHeight = outerWidth >= middleWidth ? 400 : 150;
 
   Carousel.prototype = {
     play: function () {
