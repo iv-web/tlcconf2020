@@ -149,6 +149,7 @@
     flex-direction: row
     justify-content: space-between
     padding-top: 20px
+    padding-bottom: 60px
 
 .intro-feature-wrap
   padding-top: 20px;
@@ -205,7 +206,7 @@
   @media mq-normal
     font-size: 24px
     line-height: 40px
-    margin: 80px
+    margin: 60px 0 30px 0
 
 #intro-user-wrap
   margin: 0 auto;
@@ -510,38 +511,33 @@
 .speaker-subject-main
   margin: 0 auto
   width: 358px
-  height: 140px
+  height: 150px
   background-size: cover
   margin-bottom: 14px
-  background: url(https://qpic.url.cn/feeds_pic/Q3auHgzwzM7I1jBYfDiaKXmlb4CrubsCjJagqiaLDLR1qmHwPetwFyww/) no-repeat
+  background: url(https://qpic.url.cn/feeds_pic/ajNVdqHZLLAqWOypJPF1ykXY7hxfZc4qsqs07oCYVqY3hicCQViaqibyw/) center center
+  background-size: contain
   text-align: center
   @media mq-normal
-    width: 1196px
+    width: 100%
     height: 280px
-  .speaker-subject-main-title
-    color: rgb(255, 255, 255)
-    font-weight: bold
-    width: 312px
-    border-bottom: 1px dashed rgb(255, 255, 255)
-    font-size: 16px
-    padding: 20px 0 15px
-    margin: 0 auto 15px
-    @media mq-normal
-      font-size: 32px
-      padding: 60px 0px 30px
-      margin: 0px auto 30px
-      width: 370px
+    background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM7Cttjx3NMeWgEoXhbPSwuQ7It0PoRem4opJtzeY7F2ZQ/') center center
   .speaker-subject-main-content
+    position:relative
+    top: 60px
     font-size: 12px
     color: rgb(255, 255, 255)
     width: 300px
-    text-align: left
+    text-align: center
     line-height: 16px
     margin: 0px auto
-    @media mq-normal
-      font-size: 16px
+    @media mq-normal 
+      top:140px
+      font-size: 18px
       width: 600px
       line-height: 24px
+      bottom: 30px
+  .speaker-subject-main-title
+    display:  none
 
 .speaker-subject-branch
   margin: 0 auto
@@ -590,8 +586,8 @@
 
 .speaker-subject-items
   margin: 0 auto
-  width: 392px
-  height: 168px
+  width: 358px
+  height: 100px
   background-color: rgb(255, 255, 255)
   margin-bottom: 16px
   display: flex
@@ -610,8 +606,8 @@
     height: 90px
     margin-right: 16px
     img
-      width: 90px
-      height: 90px
+      width: 75px
+      height: 75px
       border-radius: 50%
   .speaker-info
     float: left
@@ -620,7 +616,7 @@
       font-size: 16px
       width: 250px
     .speaker-topic
-      font-size: 20px
+      font-size: 16px
       color: #4740FF
       line-height: 24px
       margin-bottom: 12px
@@ -629,7 +625,7 @@
         color: #4740FF
     .speaker-name
       color: #666666
-      font-size: 18px
+      font-size: 14px
 
 .speaker-subject-items:last-child
   @media mq-normal
@@ -642,7 +638,7 @@
     background-size: cover
     @media mq-normal
       height: 400px
-      background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM5RGYaEuPUvaHHIDUQWUc1dL7sebJsry63QcwKdQkicibcw/')
+      background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM5RGYaEuPUvaHHIDUQWUc1dL7sebJsry63QcwKdQkicibcw/') center center
     .inner
       height: 150px
       position: relative
@@ -657,7 +653,7 @@
         width: 100%
         @media mq-normal
           overflow: hidden
-          border-radius: 48px 48px 0 0
+
         .tab-items
           width: 910px
           @media mq-normal
@@ -676,14 +672,10 @@
               height: 56px
               width: 196px
               font-size: 20px
+              line-height: 56px
           li:hover
             background-color: rgba(86, 85, 134, 1)
-            height: 30px
-            @media mq-normal
-              height: 60px
-            
-
-
+  
 #schedule-wrap
   display: none
   overflow: scroll
@@ -696,24 +688,21 @@
   @media mq-normal
     display: none
   .schedule-subject-branch
+    position: relative
     margin: 0 auto
+    margin-top: 10px
     width: 358px
-    height: 140px
+    height: 40px
     background-size: cover
-    margin-bottom: 14px
-    background: #fff
-    text-align: center
+    background: #020436
     @media mq-normal
       width: 1196px
       height: 280px
     .schedule-subject-main-title
-      color: #535bff
-      font-weight: bold
-      width: 312px
-      border-bottom: 1px dashed #000
-      font-size: 16px
-      padding: 20px 0 15px
-      margin: 0 auto 30px
+      color: #ffffff
+      font-size: 14px
+      line-height: 40px
+      margin-left: 10px
       @media mq-normal
         font-size: 32px
         padding: 60px 0px 30px
@@ -722,20 +711,23 @@
     .schedule-subject-main-content
       text-align: center
       font-size: 14px
-      color: #000
-      width: 300px
-      line-height: 16px
-      margin: 0px auto
+      color: #ffffff
+      line-height: 40px
       @media mq-normal
         font-size: 16px
         width: 600px
         line-height: 24px
+    .schedule-subject-time
+      position: absolute
+      right:10px
+      line-height: 40px
+      font-size: 14px
+      color: #ffffff
   .topic-item
     margin: 0 auto
+    padding: 10px
     width: 358px
-    height: 120px
     background-color: rgb(255, 255, 255)
-    margin-bottom: 14px
     display: flex
     align-items: center
     @media mq-normal
@@ -754,37 +746,29 @@
       justify-content: space-between
       .author-wrap
         display: flex
-        .avatar
-          width: 90px
-          margin-right: 10px
-          img
-            width: 90px
-            height: 90px
-            border-radius: 50%
-            border: 1px solid #dcdddd
         .author-info
           display: flex
           flex-direction: column
           justify-content: center
           .name
-            font-size: 16px
+            font-size: 14px
             // color: rgba(71, 64, 255, 1)
-            line-height: 24px
-            width: 150px
-            margin-bottom: 12px
+            line-height: 16px
+            width: 200px
             a
-              font-size: 16px
+              font-size: 14px
               // color: rgba(71, 64, 255, 1)
               text-decoration: none
           .title
-            color: #999
+            color: #666666
             font-size: 14px
             margin-left: 0
+            line-height: 20px
       .time
         display: flex
         align-items: center
-        margin-right: 10px
         font-size: 12px
+        color: #000
 .schedule-wrap
   h1
     display: flex
@@ -795,9 +779,12 @@
       width: 24px
       height: 30px
   .tab-header
-    background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM6S2fniczcQsyHekXEgHc4P0cUl37nFSdOmbjyNoLcic0kA/') center center
-    height: 260px
+    background:url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM5VEkicc0GibbE0qiaONYOz6QJicv57LAhfj0r1PUgLrWurmw/') center center
+    height: 150px
     background-size: cover
+    @media mq-normal
+      height: 260px
+      background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM6S2fniczcQsyHekXEgHc4P0cUl37nFSdOmbjyNoLcic0kA/') center center
     .inner
       height: 260px
       position: relative
@@ -850,47 +837,58 @@
 .apply-wrap
   overflow: hidden
   .header
-    background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM67WK5VRd7jXQcNW70Fb4BdQpV46iaI5Adhp5aowGktG9g/') center center
-    height: 400px
+    background: url('https://qpic.url.cn/feeds_pic/ajNVdqHZLLCqF339EGJpGptASHBEZgdOy7T5d9Y4QP9zQRXU6kzntw/') center center
+    background-size: contain
+    height: 150px
+    @media mq-normal
+      background: url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM67WK5VRd7jXQcNW70Fb4BdQpV46iaI5Adhp5aowGktG9g/') center center
+      height: 400px
     .wrapper
       .inner
-        line-height: 30px
         color: #fff
         font-size: 14px
         padding: 0 10px
-        line-height: 22px
+        line-height: 16px
         .title
-          width: 682px
+          width: 355px
           margin:0 auto
-          margin-top: 200px
-          margin-bottom: 30px
+          margin-top: 50px
           text-align: center
-        @media mq-normal
-          font-size: 18px
-          line-height: 30px
+          @media mq-normal
+            width: 682px
+            margin: 0 auto
+            margin-top: 200px
+            margin-bottom: 30px
+            font-size: 18px
+            line-height: 30px
         .desc
             text-align: center
-            font-size: 18px
+            font-size: 14px
+            @media mq-normal
+              font-size: 18px
   .tab-content
     .review-pictures
       margin-top: 60px
       .requirements-title
-        color: #4740FF
-        font-size: 20px
-        font-weight: bold
-        text-align: center
-        margin-bottom: 100px
+        background:url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM6AwW2TvfBm5e4RTMPfz7ewmjnPHhEjc2jJm3rHNSHqYA/') no-repeat
+        width: 271.5px
+        height: 33.5px
+        background-size: contain
+        margin: 0px auto
         @media mq-normal
-          font-size: 30px
+          // padding-top: 74px
+          // padding-bottom: 70px
+          width: 543px
+          height: 67px
       .carousel
         position: relative
         z-index: 2
-        height:300px
-        margin-top: 20px
+        height:250px
         transform-style: preserve-3d
         perspective: 800px
         @media mq-normal
           height: 530px
+          margin-top: 20px
         img
           position: absolute
           left:50%
@@ -939,13 +937,16 @@
       padding: 0 10px
       margin-top: 60px
       .requirements-title
-        color: #4740FF
-        font-size: 20px
-        font-weight: bold
-        text-align: center
-        margin-bottom: 50px
+        background:url('https://qpic.url.cn/feeds_pic/Q3auHgzwzM50ibTib76oCCaLZ3DfWCMiazrbku3JzVy1qfuVTd2fe20yQ/') no-repeat
+        width: 271.5px
+        height: 33.5px
+        background-size: contain
+        margin: 0px auto
         @media mq-normal
-          font-size: 30px
+          // padding-top: 74px
+          // padding-bottom: 70px
+          width: 543px
+          height: 67px
       .section
         margin-bottom: 40px
         .section-title
@@ -978,7 +979,7 @@
         font-size: 14px
         line-height: 50px
         padding: 0
-        border-radius: 2px
+        border-radius: 28px
         @media mq-normal
           width: 170px
           height: 59px
