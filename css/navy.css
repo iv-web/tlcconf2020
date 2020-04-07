@@ -955,9 +955,9 @@ body {
   border-image: initial;
   margin: 40px auto 0px;
   border-radius: 28px;
-  width: 168px;
-  height: 56px;
-  line-height: 56px;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
 }
 @media screen and (min-width: 769px) {
   .view-all {
