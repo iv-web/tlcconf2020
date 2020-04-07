@@ -2,7 +2,7 @@
     'use strict';
 
     axios
-        .get('//now.qq.com/cgi-bin/now/activity_cms/form_data?actid=79028579')
+        .get('//now.qq.com/cgi-bin/now/activity_cms/form_data?actid=110978686')
         .then(function (response) {
             var data = response.data && response.data.result;
             var url = location.href;
