@@ -620,8 +620,14 @@ body {
   }
 }
 .intro-feature-icon img {
-  width: 110px;
-  height: 81px;
+  width: 140px;
+  height: 140px;
+}
+@media screen and (min-width: 769px) {
+  .intro-feature-icon img {
+    width: 180px;
+    height: 180px;
+  }
 }
 .intro-feature-title {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
