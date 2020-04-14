@@ -74,6 +74,11 @@
                     <img src="https://qpic.url.cn/feeds_pic/Q3auHgzwzM4SGusEcHRj1wJX9AaNQiaSew8JjurC2mCOM8QRqzI40icQ/" />
                 </a>
             </li>
+            <li>
+                <a href="https://2019.tlc.ivweb.io/" target="_blank">
+                    <img src="https://qpic.url.cn/feeds_pic/Q3auHgzwzM50fQQibUOSaGd2clwISl9plShkdKzgLwr3uzOgMl3Abgg/" />
+                </a>
+            </li>
           </ul>
         </div>
       </div>
