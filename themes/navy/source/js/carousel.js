@@ -38,7 +38,7 @@
   };
 
   var outerWidth = parseInt($(window).width());
-  var middleWidth = 1440;
+  var middleWidth = 1100;
   var _height = outerWidth >= middleWidth ? 516 : 200;
   var _slideHeight = outerWidth >= middleWidth ? 400 : 150;
 
