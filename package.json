@@ -11,6 +11,7 @@
     "deploy": "hexo deploy"
   },
   "dependencies": {
+    "@tencent/aegis-web-sdk": "^1.11.1",
     "cheerio": "^0.20.0",
     "hexo": "^3.7.1",
     "hexo-deployer-git": "^0.3.1",

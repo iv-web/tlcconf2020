@@ -112,7 +112,7 @@
         <ul id="sponsor-items" class="sponsor-items">
 
         </ul>
-        <div class="view-all"><a href="http://tlc-2019.mikecrm.com/xxbDAdN" target="_blank">成为赞助商</a></div>
+        <div class="view-all"><a href="http://jeetlqemhvgriz04.mikecrm.com/Y4YuahP" target="_blank">成为赞助商</a></div>
       </div>
     </div>
   </div>

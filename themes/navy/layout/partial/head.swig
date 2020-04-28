@@ -46,4 +46,11 @@
   }) }}
   <!-- Google Analytics -->
   {{ partial('google_analytics') }}
+  <script src="https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js?bid=3977"></script>
+  <script>
+    const aegis = new Aegis({
+      id: 2154, // 项目ID
+      uin: '986874363' // 用户唯一 ID（可选）
+    })
+  </script>
 </head>
