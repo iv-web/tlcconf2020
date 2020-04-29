@@ -804,14 +804,14 @@ body {
 .subject-branch {
   margin: 0 auto;
   width: 351px;
-  height: 150px;
+  height: 200px;
   background-color: #fff;
 }
 @media screen and (min-width: 769px) {
   .subject-branch {
     float: left;
     height: 264px;
-    width: 590px;
+    width: 640px;
   }
 }
 .subject-branch .subject-branch-title {
