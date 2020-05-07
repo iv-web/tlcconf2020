@@ -9,7 +9,7 @@
         <!-- <a href="http://2019-en.tlc.ivweb.io" class="main-nav-link">English</a> -->
       </nav>
       <div id="buy-ticket">
-        <a href="https://www.bagevent.com/event/2596495#website_moduleId_258989" class="buy-ticket-link" target="_blank">立即购票</a>
+        <a href="https://www.bagevent.com/event/6442240" class="buy-ticket-link" target="_blank">立即购票</a>
       </div>
       <div id="lang-select-wrap">
         <label id="lang-select-label"><i class="fa fa-globe"></i><span>简体中文</span></label>

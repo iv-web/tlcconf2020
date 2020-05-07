@@ -90,7 +90,7 @@
     <div class="inner">
       <div id="partner-wrap">
         <div class="partner-title"></div>
-        <div class="host-title">合作媒体</div>
+        <div class="host-title">主办方</div>
         <ul class="sponsor-items">
             <li class="partner-item">
                 <a href="https://now.qq.com/" target="_blank">
@@ -108,7 +108,7 @@
                 </a>
             </li>
         </ul>
-        <div class="host-title">主办方</div>
+        <div class="host-title">合作媒体</div>
         <ul id="sponsor-items" class="sponsor-items">
 
         </ul>
