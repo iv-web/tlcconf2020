@@ -1601,10 +1601,10 @@ body {
 }
 .apply-wrap .header {
   background: url("https://qpic.url.cn/feeds_pic/ajNVdqHZLLCqF339EGJpGptASHBEZgdOy7T5d9Y4QP9zQRXU6kzntw/") center center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
-  height: 150px;
+  -webkit-background-size: 150% 100%;
+  -moz-background-size: 150% 100%;
+  background-size: 150% 100%;
+  height: 250px;
 }
 @media screen and (min-width: 769px) {
   .apply-wrap .header {
@@ -1621,7 +1621,7 @@ body {
 .apply-wrap .header .wrapper .inner .title {
   width: 355px;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 85px;
   text-align: center;
 }
 @media screen and (min-width: 769px) {
