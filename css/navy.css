@@ -172,6 +172,7 @@ body {
   position: relative;
   background: #fff;
   padding: 40px 0;
+  overflow-x: hidden;
 }
 @media print {
   #header {
