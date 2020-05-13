@@ -3031,6 +3031,7 @@ a.article-title:hover {
   -ms-transition: 0.4s;
   transition: 0.4s;
   -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
 }
 .mobile-nav-on #container {
   -webkit-transform: translateX(260px);
