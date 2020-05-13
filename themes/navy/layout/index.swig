@@ -65,7 +65,7 @@
         <div class="preview-banner">
           <ul>
             <li>
-                <a href="http://tlc.ivweb.io/" target="_blank">
+                <a href="https://iv-web.github.io/tlcconf2017" target="_blank">
                     <img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLASNiajAYDYP8ic86yWKC2tHgFvVscFIog7E2lG4dW9icrTA/" />
                 </a>
             </li>
