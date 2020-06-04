@@ -85,7 +85,8 @@
         for (var i = 0; i < subjectInfo.items.length; i ++) {
             for (var j = 0; j < subjectInfo.items[i].speakers.length; j ++) {
                 if (subjectInfo.items[i].speakers[j].isShowIndex) {
-                    speakderItems.push(subjectInfo.items[i].speakers[j])
+                    speakderItems.push(subjectInfo.items[i].speakers[j]);
+                    speakderItems.sort((a,b) => a.priority - b.priority);
                 }
             }
         }
@@ -148,6 +149,7 @@
             var speakerItems = [];
             for (var i = 0; i < items.length; i ++) {
                 speakerItems = speakerItems.concat(items[i].speakers);
+                speakerItems.sort((a,b) => a.priority - b.priority);
             }
             return speakerItems;
         };
