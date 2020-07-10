@@ -93,7 +93,7 @@
         <div class="host-title">主办方</div>
         <ul class="sponsor-items">
             <li class="partner-item">
-                <img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLAPjiaT4ic99iao4818ibUY2fyibZ0fBbj8NKAtKR11dtWic5Yg/">
+                <img src="https://qpic.url.cn/feeds_pic/ajNVdqHZLLDXiccTGTicmItlpaLjAvkWib1SIvb5MT3ibvC35hlVicKgGOg/">
             </li>
             <li class="partner-item">
                 <a href="https://now.qq.com/" target="_blank">
