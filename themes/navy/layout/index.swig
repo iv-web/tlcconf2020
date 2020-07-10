@@ -93,6 +93,9 @@
         <div class="host-title">主办方</div>
         <ul class="sponsor-items">
             <li class="partner-item">
+                <img src="https://mp.gtimg.cn/themes/default/client/article/images/newkandianlogo.png?_bid=2378">
+            </li>
+            <li class="partner-item">
                 <a href="https://now.qq.com/" target="_blank">
                     <img src="https://qpic.url.cn/feeds_pic/Q3auHgzwzM76rdTgnxNAxOkoxLeJyqfcGsesibgAUbHkQzkWK9pvxRg/">
                 </a>
