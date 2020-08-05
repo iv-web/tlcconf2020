@@ -8,7 +8,8 @@
   "scripts": {
     "build": "hexo generate && gulp",
     "eslint": "eslint .",
-    "deploy": "hexo deploy"
+    "deploy": "hexo deploy",
+    "dev": "hexo s"
   },
   "dependencies": {
     "cheerio": "^0.20.0",
