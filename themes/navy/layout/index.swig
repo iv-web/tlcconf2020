@@ -17,15 +17,15 @@
 <div id="content-wrap">
   <div class="wrapper">
     <div class="inner">
-      <div id="intro-user-wrap">
-        <div class="publisher-title"></div>
-        <ul id="publisher-items">
-          <div></div>
-        </ul>
-      </div>
       <div id="intro-boss-wrap">
         <div class="boss-title"></div>
         <ul id="boss-items">
+          <div></div>
+        </ul>
+      </div>
+      <div id="intro-user-wrap">
+        <div class="publisher-title"></div>
+        <ul id="publisher-items">
           <div></div>
         </ul>
       </div>
