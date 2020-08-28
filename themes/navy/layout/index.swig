@@ -23,6 +23,12 @@
           <div></div>
         </ul>
       </div>
+      <div id="intro-boss-wrap">
+        <div class="boss-title"></div>
+        <ul id="boss-items">
+          <div></div>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
