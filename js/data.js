@@ -79,6 +79,19 @@
         document.getElementById('publisher-items').innerHTML = publisherOutput;
     };
 
+    var renderBoss = function(bossInfo) {
+
+        var bossTpl = '{% for item in bossItems %}  <li class="intro-user-item"> <a><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a>{{ item.name }}</a></p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
+        var bossOutput = swig.render(bossTpl, {
+            filename: '/bossTpl',
+            locals: {
+                bossItems: bossInfo.items
+            }
+        });
+
+        document.getElementById('boss-items').innerHTML = bossOutput;
+    };
+
     var renderSpeaker = function(subjectInfo) {
         var speakderItems = [];
 
@@ -133,6 +146,7 @@
         renderFeature(data.featureInfo);
         renderSubject(data.subjectInfo);
         renderPublisher(data.publisherInfo);
+        renderBoss(data.bossInfo);
         renderSpeaker(data.subjectInfo);
         renderPartner(data.sponsorInfo);
         renderFriendLink(data.friendlinkInfo);
@@ -381,6 +395,7 @@
 
         var renderTopicInfo = function(data) {
             var publisherInfo = data.publisherInfo;
+            var bossInfo = data.bossInfo;
             var subjectInfo = data.subjectInfo;
             var urlObject = getUrlArgObject();
             var number = parseInt(urlObject['number']);
@@ -391,11 +406,16 @@
                     publisherItem = publisherInfo.items[i];
                 }
             }
+            for (var i = 0; i < bossInfo.items.length; i ++) {
+                if (bossInfo.items[i].number === number) {
+                    publisherItem = bossInfo.items[i];
+                }
+            }
 
             var speakerList = [];
             for (var i = 0; i < subjectInfo.items.length; i ++) {
                 for (var j = 0; j < subjectInfo.items[i].speakers.length; j ++) {
-                    if (publisherItem.speakerIds.split(',').indexOf(subjectInfo.items[i].speakers[j].number.toString()) > -1) {
+                    if (publisherItem.speakerIds && publisherItem.speakerIds.split(',').indexOf(subjectInfo.items[i].speakers[j].number.toString()) > -1) {
                         var speakerItem = subjectInfo.items[i].speakers[j];
                         speakerItem.branchName = subjectInfo.items[i].title;
                         speakerList.push(speakerItem);
