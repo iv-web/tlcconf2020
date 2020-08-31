@@ -80,12 +80,16 @@
     };
 
     var renderBoss = function(bossInfo) {
-
-        var bossTpl = '{% for item in bossItems %}  <li class="intro-user-item"> <a><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a>{{ item.name }}</a></p> <p class="desc">{{ item.brief }}</p> </div> </li>  {% endfor %}'
+        var bossList = bossInfo.items.map(function (item) {
+            return Object.assign(item, {
+                brief: item.brief.split('|')
+            });
+        });
+        var bossTpl = '{% for item in bossItems %}  <li class="intro-user-item"> <a><img src="{{ item.avatar }}"></a> <div class="intro-user-info"> <p class="name"><a>{{ item.name }}</a></p> {% for briftText in item.brief %}<p class="desc">{{ briftText }}</p>{% endfor %} </div> </li>  {% endfor %}'
         var bossOutput = swig.render(bossTpl, {
             filename: '/bossTpl',
             locals: {
-                bossItems: bossInfo.items
+                bossItems: bossList
             }
         });
 
