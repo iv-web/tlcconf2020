@@ -8,7 +8,7 @@ function shareWX() {
             title: "“大前端，信息流”，腾讯2020 TLC大会震撼登陆",
             desc: "由看点团队精心打造，致力于提升和促进全行业音视频、直播、图像处理、大前端、信息流等领域的交流和技术创新",
             link: i,
-            imgUrl: "https://qpic.url.cn/feeds_pic/Q3auHgzwzM7vqSndf7TQW6b9gDXXIwib4sa7BVXeRBsjlKSm7y6JvRQ/"
+            imgUrl: "https://nowpic.gtimg.com/feeds_pic/Q3auHgzwzM7vqSndf7TQW6b9gDXXIwib4sa7BVXeRBsjlKSm7y6JvRQ/"
         }
     }
     function n(n) {
