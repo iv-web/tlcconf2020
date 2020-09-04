@@ -1130,6 +1130,26 @@ body {
 #preview-wrap .preview-banner img {
   width: 100%;
 }
+#preview-wrap .preview-banner ol {
+  height: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#preview-wrap .preview-banner .dot {
+  margin-right: 10px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+}
+#preview-wrap .preview-banner .active {
+  background-color: #fff;
+  color: #00f;
+}
 #partner-wrap {
   text-align: center;
   padding-top: 74px;
