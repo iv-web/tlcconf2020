@@ -261,7 +261,7 @@
                 var number = data.subjectInfo.items[i].schedules[j].number;
 
                 if (plan) {
-                    tableData[timeline].push(plan);
+                    tableData[timeline].push(plan.split('|'));
                 } else if (number) {
                     tableData[timeline].push(speakerMap[number]);
                 }
@@ -274,18 +274,33 @@
             }
         }
 
-        var contentTpl = '<tr class="dark-blue"> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue"><p>{{headerItem.title}}</p><p class="location">({{headerItem.location}})</p></td>{% endfor %}</tr>{% for key, val in tableData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}<p class="blue">{{item}}</p> {% endif %}</td>{% endfor %} </tr>{% endfor %}';
+        var morningData = {};
+        var afterNoonData = {};
+
+        for (var time in tableData) {
+            if (new Date('2020-09-05 ' + time.split('-')[0])-new Date('2020-09-05 12:30') <= 0) {
+                morningData[time] = tableData[time];
+            } else {
+                afterNoonData[time] = tableData[time];
+            }
+        }
+        console.log('--morningData--', morningData, afterNoonData)
+
+
+        var contentTpl = '<tr class="dark-blue"><td class="bold">时间</td><td class="bold">主会场<br/>(三楼7号厅)</td><td class="bold">主会场<br/>(三楼7号厅)</td><td class="bold">主会场<br/>(三楼7号厅)</td><td class="bold">主会场<br/>(三楼7号厅)</td><td class="bold">主会场<br/>(三楼7号厅)</td></tr>{% for key, val in morningData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}{% for it in item %}<p class="blue">{{it}}</p> {% endfor %}{% endif %}</td>{% endfor %} </tr>{% endfor %}<tr class="dark-blue"> <td class="bold">时间</td> {% for headerItem in headerData %}<td class="bold blue"><p>{{headerItem.title}}</p><p class="location">({{headerItem.location}})</p></td>{% endfor %}</tr>{% for key, val in afterNoonData %}<tr> <td>{{ key }}</td> {% for item in val %} <td> {% if item.topic %}<p class="blue"><a href="/detail/?number={{item.number}}" target="_blank">{{item.topic}}</a></p> <p>{{item.name}}</p>{% else %}{% for it in item %}<p class="blue">{{it}}</p> {% endfor %}{% endif %}</td>{% endfor %} </tr>{% endfor %}';
         
         var h5ContentTpl = '{% for key, val in tableData %}<div class="schedule-subject-branch "> <span class="schedule-subject-main-title">{{val.title}}</span> <span class="schedule-subject-main-content">({{val.location}})</span> <span class="schedule-subject-time">时间</span> </div>{% for item in val.schedules %} {% if speakerMap[item.number] && speakerMap[item.number].topic %} <div class="topic-item"><div class="content"> <div class="author-wrap"> <div class="author-info"> <p class="name"><a href="/detail/?number={{item.number}}" target="_blank">{{ speakerMap[item.number].topic}}</a></p> <p class="title">{{speakerMap[item.number].name}}</p> </div></div><div class="time">{{speakerMap[item.number].time}}</div> </div></div>{% endif %} {% if item.plan %}<div class="topic-item"><div class="content"> <div class="author-wrap"><div class="avatar"></div> <div class="author-info"> <p class="name">{{item.plan}}</p> </div></div><div class="time">{{item.timeline}}</div> </div></div>{% endif %} {% endfor %}{% endfor %}';
 
         var contentOutput = swig.render(contentTpl, {
             locals: {
                 headerData: headerData,
-                tableData: tableData
+                tableData: tableData,
+                morningData: morningData,
+                afterNoonData: afterNoonData,
             }
         });
 
-        console.log(data.subjectInfo.items)
+        console.log('--tableData--', tableData, headerData)
         var h5ContentOutput = swig.render(h5ContentTpl, {
             locals: {
                 tableData: data.subjectInfo.items,
